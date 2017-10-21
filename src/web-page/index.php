@@ -1,3 +1,4 @@
+<?php include('server.php'); ?>
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -25,10 +26,12 @@
 	  <h2>Register</h2>
 	</div>
 
-	  <form class="fields" action="index.php" method="POST">
+	  <form class="fields" action="index.php">
             <!--display volidation errors here -->
 
-            <p><?php echo $errors ?></p>
+	    <div>
+            <p><?php echo $errors; ?></p>
+	    </div>
 
 	    <div class="entry">
 	      <input type="text" class = large-fld name="email" value="" placeholder="Email">
