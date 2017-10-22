@@ -16,6 +16,7 @@ if (isset($_POST['submit'])) {
     $email = mysqli_real_escape_string($db,$_POST['email']);
     $name = mysqli_real_escape_string($db,$_POST['name']);
     $pwd = mysqli_real_escape_string($db,$_POST['passwd']);
+    $income = mysqli_real_escape_string($db,$_POST['mincome']);
 
     if (empty($email) || empty($name) || empty($pwd)) {
 	$errors = "Must complete all fields.";
@@ -43,7 +44,6 @@ if (isset($_POST['submit'])) {
 		    $sql = "INSERT INTO users (user_email, user_name, user_pwd) VALUES ('$email','$name','$hashed')";
 		    mysqli_query($db,$sql);
 		    header("Location: registered.php");
-		    exit();
 		}
 	    }
 	}

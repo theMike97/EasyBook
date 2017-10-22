@@ -36,10 +36,16 @@ if (isset($_POST['submit'])) {
 		    exit();
 		} elseif ($hashed_check == true) {
 		    // log in user
+		    // load all of users data
 		    $_SESSION['u_id'] = $row['user_id'];
 		    $_SESSION['u_email'] = $row['user_email'];
 		    $_SESSION['u_name'] = $row['user_name'];
 		    $_SESSION['u_pwd'] = $row['user_pwd'];
+		    $_SESSION['mincome'] = $row['income'];
+		    $_SESSION['aid'] = $row['aid'];
+		    $_SESSION['allow'] = $row['allowance'];
+		    $_SESSION['other'] = $row['other_income'];
+		    $_SESSION['tot_income'] = $row['total_income'];
 		    header("Location: home.php?login=success");
 		    exit();
 		}
