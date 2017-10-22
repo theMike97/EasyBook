@@ -26,7 +26,7 @@
 	  <h2>Register</h2>
 	</div>
 
-	  <form class="fields" action="index.php">
+	  <form class="fields" action="index.php" method="POST">
             <!--display volidation errors here -->
 
 	    <div>
