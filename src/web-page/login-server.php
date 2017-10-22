@@ -6,7 +6,7 @@ $email = "";
 $name = "";
 $pwd = "";
 
-$db = mysqli_connect("localhost", "root", "3283mike", "EasyBook");
+$db = mysqli_connect("localhost", "root", "root", "EasyBook");
 
 // if log in is clicked
 if (isset($_POST['submit'])) {

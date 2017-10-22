@@ -6,7 +6,7 @@ $pwd = "";
 $errors = "";
 
 // connect to database
-$db = mysqli_connect("localhost", "root", "3283mike", "EasyBook");
+$db = mysqli_connect("localhost", "root", "root", "EasyBook");
 
 // if get started button is clicked
 if (isset($_POST['submit'])) {
@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
 	exit();
     } else {
 	// check for valid name
-	if (!preg_match("/^[a-zA-Z]*$/", $name)) {
+	if (!preg_match("/^[a-zA-Z\s]*$/", $name)) {
 	    header("Location: index.php?invalid-name");
 	} else {
 
