@@ -15,10 +15,10 @@ session_start();
     <body>
 	<div class="container">
 	    <div class="top">
-	        <h1>Welcome <?php echo $_SESSION['u_name']; ?></h1>
-	        <form action="logout.php" method="POST">
+		<h1>Welcome <?php echo $_SESSION['u_name']; ?></h1>
+		<form action="logout.php" method="POST">
 		    <button type="submit" name="logout">Log out</button>
-	        </form>
+		</form>
 	    </div>
 	    <div class="budget">
 		<form class="fields" action="calculate.php" method="POST">
@@ -30,7 +30,7 @@ session_start();
 			</tr>
 			<tr>
 			    <td>Estimated monthly income</td>
-			    <td><input type="text" class="inputField" name="mincome" value=<?php echo "" . $_SESSION['mincome']; ?>></td>
+			    <td><input type="text" class="inputField" name="mincome" value=<?php echo $_SESSION['mincome']; ?>></td>
 			</tr>
 			<tr>
 			    <td>Financial aid</td>
@@ -46,7 +46,7 @@ session_start();
 			</tr>
 			<tr>
 			    <th>Total</th>
-			    <th>$<?php echo $_SESSION['tot_income']; ?></th>
+			    <th>$<?php echo $_SESSION['total_income']; ?></th>
 			</tr>
 		    </table>
 

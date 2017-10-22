@@ -33,8 +33,5 @@ if (isset($_POST['calculate'])) {
 	mysqli_query($db,$sql);
 	header("Location: home.php?");
     }
-} else {
-    header("Location: home.php?fail");
-    exit();
 }
 mysqli_close($db);
