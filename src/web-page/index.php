@@ -1,4 +1,4 @@
-<?php include('server.php'); ?>
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -26,7 +26,7 @@
 	  <h2>Register</h2>
 	</div>
 
-	  <form class="fields" action="index.php" method="POST">
+	  <form class="fields" action="server.php" method="POST">
             <!--display volidation errors here -->
 
 	    <div>
