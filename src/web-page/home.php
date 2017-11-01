@@ -52,14 +52,25 @@ session_start();
 
 		    <h2>Monthly Expenses</h2>
 		    <table class="table">
+			<tr>
+			    <th>Item</th>
+			    <th>Amount</th>
+			</tr>
 		    </table>
 
 		    <h2>Monthly Semester Costs</h2>
 		    <table class="table">
+			<tr>
+			    <th>Item</th>
+			    <th>Amount</th>
+			</tr>
 		    </table>
 
 		    <h2>Overview</h2>
 		    <table class="table">
+			<tr>
+			    <th>How am I doing?</th>
+			</tr>
 		    </table>
 		    <button type="submit" class="btn" name="calculate">Calculate</button>
 		</form>
